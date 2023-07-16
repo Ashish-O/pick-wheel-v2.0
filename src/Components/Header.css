@@ -1,0 +1,10 @@
+.header-main{
+    color: rgb(67, 67, 67);
+    background-color: grey;
+    opacity: 60%;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    justify-content: center;
+    height: 5vh;
+}

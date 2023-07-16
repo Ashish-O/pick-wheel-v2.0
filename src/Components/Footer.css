@@ -1,0 +1,15 @@
+.footer-main{
+    color: rgb(67, 67, 67);
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    background-color: grey;
+    width: -webkit-fill-available;
+    opacity: 50%;
+    position: fixed;
+    bottom: 0;
+    height: 5vh;
+}

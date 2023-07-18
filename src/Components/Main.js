@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './Main.css'
-import Circle from './Circle'
+import CircleAnimation from './CircleAnimation'
 
 export default function Main() {
 
@@ -9,10 +9,12 @@ export default function Main() {
   return (
     <div className='main-section'>
       <div className='section-loader'>
-        <Circle />
+        <CircleAnimation />
       </div>
       {showListSection && <section className='section-main'>
       </section>}
+
+      <div className='winner-section'></div>
     </div>
   )
 }

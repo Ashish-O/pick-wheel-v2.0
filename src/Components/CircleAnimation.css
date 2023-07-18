@@ -1,0 +1,102 @@
+.circle {
+    position: relative;
+    padding: 0;
+    margin: 1em auto;
+    width: 20em;
+    height: 20em;
+    border-radius: 50%;
+    list-style: none;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px 7px rgba(196, 131, 131, 0.53);
+    transition: transform 0.3s linear;
+  }
+  
+  .spinning-circle {
+    animation: spin 2s infinite linear;
+    animation-play-state: running;
+    animation-timing-function: linear;
+  }
+
+  .circle.paused {
+    /* Apply specific styles when animation is paused */
+    animation-play-state: paused;
+    animation-timing-function: ease-out;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  li {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 50%;
+    transform-origin: 0% 100%;
+  }
+  
+  .text {
+    position: absolute;
+    left: -100%;
+    width: 200%;
+    height: 200%;
+    text-align: center;
+    transform: skewY(60deg) rotate(15deg);
+    padding-top: 20px;
+  }
+  
+  .even {
+    background-color: white;
+  }
+  
+  .odd {
+    background-color: rgb(228, 129, 129);
+  }
+
+  .button-circle {
+    padding: 1em 2em;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #b34c4c;
+    transition: all 1000ms;
+    font-size: 15px;
+    position: relative;
+    overflow: hidden;
+    outline: 2px solid #af462c;
+    margin-left: 6em;
+  }
+  
+  .button-circle:hover {
+    color: #ffffff;
+    transform: scale(1.1);
+    outline: 2px solid #ca7070;
+    box-shadow: 4px 5px 17px -4px #933838;
+  }
+  
+  .button-circle::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: #af4040;
+    transform: skewX(45deg);
+    z-index: -1;
+    transition: width 1000ms;
+  }
+  
+  .button-circle:hover::before {
+    width: 250%;
+  }
+  

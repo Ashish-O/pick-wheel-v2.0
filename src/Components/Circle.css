@@ -8,6 +8,7 @@
     border-radius: 50%;
     list-style: none;
     overflow: hidden;
+    box-shadow: 0px 0px 20px 7px rgb(196 131 131 / 53%);
   }
   
   li {
